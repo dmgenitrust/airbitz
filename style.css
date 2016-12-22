@@ -1,48 +1,6 @@
-/*custom font*/
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+
+* {margin: 0; padding: 0;}
 
 html {
 	height: 100%;
@@ -52,7 +10,6 @@ html {
 body {
 	font-family: montserrat, arial, verdana;
 }
-/*form styles*/
 #forms {
 	width: 300px;
 	margin: 20px auto;
@@ -68,15 +25,11 @@ body {
 	box-sizing: border-box;
 	width: 90%;
 	margin: 0 5%;
-
-	/*stacking forms above each other*/
 	position: relative;
 }
-/*Hide all except first form*/
 #forms form:not(:first-of-type) {
 	display: none;
 }
-/*inputs*/
 #forms input, #forms textarea, #forms select {
 	padding: 15px;
 	border: 1px solid #ccc;
@@ -88,7 +41,6 @@ body {
 	color: #2C3E50;
 	font-size: 13px;
 }
-/*buttons*/
 #forms .action-button {
 	width: 100px;
 	background: #27AE60;
@@ -99,6 +51,7 @@ body {
 	cursor: pointer;
 	padding: 10px 5px;
 	margin: 10px 5px;
+    -webkit-appearance: none;
 }
 #forms .action-button:hover, #forms .action-button:focus {
 	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
@@ -111,7 +64,6 @@ body {
 #forms .previous.action-button:hover, #forms .previous.action-button:focus {
 	box-shadow: 0 0 0 2px #f9f9f9, 0 0 0 3px #27AE60;
 }
-/*headings*/
 .fs-title {
 	font-size: 15px;
 	text-transform: uppercase;
@@ -124,11 +76,9 @@ body {
 	color: #666;
 	margin-bottom: 20px;
 }
-/*progressbar*/
 #progressbar {
 	margin-bottom: 30px;
 	overflow: hidden;
-	/*CSS counters to number the steps*/
 	counter-reset: step;
 }
 #progressbar li {
@@ -152,7 +102,6 @@ body {
 	border-radius: 3px;
 	margin: 0 auto 5px auto;
 }
-/*progressbar connectors*/
 #progressbar li:after {
 	content: '';
 	width: 100%;
@@ -161,14 +110,11 @@ body {
 	position: absolute;
 	left: -50%;
 	top: 9px;
-	z-index: -1; /*put it behind the numbers*/
+	z-index: -1;
 }
 #progressbar li:first-child:after {
-	/*connector not needed before the first step*/
 	content: none;
 }
-/*marking active/completed steps green*/
-/*The number of the step and the connector before it = green*/
 #progressbar li.active:before,  #progressbar li.active:after{
 	background: #27AE60;
 	color: white;
