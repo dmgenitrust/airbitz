@@ -14,8 +14,8 @@ body {
 }
 /*form styles*/
 #forms {
-	width: 400px;
-	margin: 50px auto;
+	width: 300px;
+	margin: 20px auto;
 	text-align: center;
 	position: relative;
 }
@@ -24,7 +24,7 @@ body {
 	border: 0 none;
 	border-radius: 3px;
 	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
-	padding: 20px 30px;
+	padding: 10px 15px;
 	box-sizing: border-box;
 	width: 90%;
 	margin: 0 5%;
