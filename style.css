@@ -10,9 +10,16 @@ html {
 body {
 	font-family: montserrat, arial, verdana;
 }
+#flag{
+    width:60px;
+    height:30px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
 #forms {
-	width: 300px;
-	margin: 20px auto;
+	width: 320px;
+	margin: 40px auto;
 	text-align: center;
 	position: relative;
 }
